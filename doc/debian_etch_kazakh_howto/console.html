@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2. Консоль</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.0">
+<link rel="start" href="index.html" title="Kazakh Language for Debian GNU/Linux 4.0">
+<link rel="up" href="index.html" title="Kazakh Language for Debian GNU/Linux 4.0">
+<link rel="prev" href="intro.html" title="1. Введение">
+<link rel="next" href="x-window.html" title="3. X Window">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">2. Консоль</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="intro.html">Пред.</a> </td>
+<th width="60%" align="center"> </th>
+<td width="20%" align="right"> <a accesskey="n" href="x-window.html">След.</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1" lang="ru">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="console"></a>2. Консоль</h2></div></div></div>
+<div class="sect2" lang="ru">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="console-cyrillic"></a>2.1. Пакет console-cyrillic</h3></div></div></div>
+<p>Настройка локали в консоли в принципе не должна составить труда. Для языков использующих кириллицу рекомендуют использовать пакет <span class="package">console-cyrillic</span> входящий в состав Debian. Этот пакет также включает поддержку казахского языка. Установите его, если он у вас еще не установлен:</p>
+<pre class="screen">
+# aptitude install console-cyrillic
+</pre>
+<p>Выполните следующую команду, если вы уже пользуетесь этим пакетом:</p>
+<pre class="screen">
+# dpkg-reconfigure -plow console-cyrillic
+</pre>
+<p>После чего вам будет предложено ответить на несколько вопросов, а именно:</p>
+<div class="orderedlist"><ol type="1">
+<li><p>На каких виртуальных консолях вы хотите использовать кириллицу? Обычно значение по умолчанию;</p></li>
+<li><p>Раскладок клавиатур на выбор две: Kazakh with letter IO и Kazakh, с содержащей букву CYRILLIC LETTER IO (ё) и без (КСТ КазССР 903-90) соответственно. Выбирайте на ваш вкус;</p></li>
+<li><p>Способ переключения раскладок клавиатур. Также на ваш вкус;</p></li>
+<li><p>Временный ввод символов другого языка без переключения раскладки. Кто пользуется этим?</p></li>
+<li>
+<p>Шрифт. Выбор не велик:</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>A Asian;</p></li>
+<li><p>Antiq Asian;</p></li>
+<li><p>B Asian;</p></li>
+<li><p>Terminus Asian;</p></li>
+<li><p>Terminus Unicode.</p></li>
+</ul></div>
+<p>Мне больше нравится вариант A Asian;</p>
+</li>
+<li><p>Рекомендуемая к использованию кодировка — UTF-8. Выбирайте пункт UNICODE;</p></li>
+<li><p>Если вы ответите утвердительно на этот вопрос, <span class="package">console-cyrillic</span> будет запускаться при загрузке системы. Иначе вам придется каждый раз самостоятельно запускать его.</p></li>
+</ol></div>
+</div>
+<div class="sect2" lang="ru">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="locale"></a>2.2. Локаль</h3></div></div></div>
+<p>Теперь приступим к настройке локали. Проверьте, сгенерирована ли у вас локаль kk_KZ.UTF-8:</p>
+<pre class="screen">
+# locale -a
+</pre>
+<p>Если нет, генерируем ее следующим образом:</p>
+<pre class="screen">
+# dpkg-reconfigure locales
+</pre>
+<p>Проверьте, установлен ли у вас этот пакет! В предложенном списке отметьте kk_KZ.UTF-8. После того как локали готовы, выполним следующую команду (для bash, для других оболочек смотрите соответствующую документацию):</p>
+<pre class="screen">
+# export LANG=kk_KZ.UTF-8
+</pre>
+<p>Выполним загрузочный скрипт console-cyrillic:</p>
+<pre class="screen">
+# invoke-rc.d restart console-cyrillic
+</pre>
+<p>Таким образом у нас есть консоль с возможностью работы с казахским языком. Проверьте правильность настройки командами: <span><strong class="command">date</strong></span> и <span><strong class="command">cal</strong></span>. Осталось только отредактировать соответствующий вашему шеллу конфигурационный файл (для bash это <code class="filename">$HOME/.bash_profile</code>).</p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="intro.html">Пред.</a> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right"> <a accesskey="n" href="x-window.html">След.</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">1. Введение </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Начало</a></td>
+<td width="40%" align="right" valign="top"> 3. X Window</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

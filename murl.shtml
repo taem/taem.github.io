@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Murl | Linukz.org</title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name="keywords" content="Murl, Murl.kz, Linux, Open Source, Freeware, FOSS, FLOSS, KDE, KDE4, Python">
+<link rel=stylesheet type="text/css" href="default.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<!--#include virtual="header.html" -->
+
+<h2>PyMurl</h2>
+
+<p>Murl.kz API implementation in Python. Murl is a URL shortener service. Please point your browser to <a href="http://murl.kz">murl.kz</a> to try it out!</p>
+
+<h4>Download</h4>
+
+<p>Latest version - 0.3d: <a href="/download/PyMurl-0.3d.tar.gz">PyMurl-0.3d.tar.gz</a>.
+</p>
+
+<h4>Changelog</h4>
+<h5>v0.3d</h5>
+
+<ul><li>Check for correct murl in demurlification routine.</ul>
+
+<p>2010-02-23</p>
+
+<h5>v0.3c</h5>
+
+<ul><li>Demurlification added.</ul>
+
+<p>2010-02-22</p>
+
+<h5>v0.3</h5>
+
+<p>This release introduces following changes in Murl class interface.</p>
+
+<ul><li>Add proxy support:
+    <ul><li>New public method set_proxy() to enable/disable proxy.</ul>
+    <li>Improve server response format handling:
+      <ul><li>Changes in Murl class interface:
+	  <ul><li>Type of format parameter in the constructor changed to integer: MURL_RESPONSE_FORMAT_XML = 0 or MURL_RESPONSE_FORMAT_JSON = 1.
+	      <li>Type of attribute 'status' changed to integer: MURL_STATUS_OK = 0, MURL_STATUS_ERROR = 1 and MURL_STATUS_UNKNOWN = 255.</ul>
+	  <li>New classes:
+	    <ul><li>MurlResponseFormat - base server reply format.
+		<li>MurlXmlResponse - XML response.
+		<li>MurlJsonResponse - JSON response. Parsing not yet implemented.</ul></ul>
+      <li>Drop API method handling.
+      <li>Update example code pymurl.py according to the changes in PyMurl.
+</ul>
+
+
+<h4>Development</h4>
+
+<p>Project page at Gitorious: <a href="http://gitorious.org/murl/pymurl">http://gitorious.org/murl/pymurl</a>.
+  <br>Clone Git repository: <tt>git clone git://gitorious.org/murl/pymurl.git</tt>.
+  <br>Web interface: <a href="http://gitorious.org/murl/pymurl/trees/master">http://gitorious.org/murl/pymurl/trees/master</a>.
+</p>
+
+<h2>Murl KDE4 Plasmoid</h2>
+
+<p>Murl.kz KDE 4 plasmoid in Python.</p>
+
+<h4>Download</h4>
+
+<p>Latest version - 0.1d: <a href="/download/murl-0.1d.plasmoid">murl-0.1d.plasmoid</a>.
+</p>
+
+<h4>Development</h4>
+
+<p>Project page at Gitorious: <a href="http://gitorious.org/murl/murl">http://gitorious.org/murl/murl</a>.
+  <br>Clone Git repository: <tt>git clone git://gitorious.org/murl/murl.git</tt>.
+  <br>Web interface: <a href="http://gitorious.org/murl/murl/trees/master">http://gitorious.org/murl/murl/trees/master</a>.
+</p>
+
+<h4>Author</h4>
+
+<p>Timur Birsh. Send your patches to <a href="mailto:taem.NOSPAM@linukz.org">taem.NOSPAM@linukz.org</a> (remove <i>.NOSPAM</i>).</p>
+
+<small>Last update: 2010-02-22</small>
+
+<!--#include virtual="footer.html" -->
+
+</body>
+</html>

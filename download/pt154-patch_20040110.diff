@@ -1,0 +1,1216 @@
+*** /dev/null	Wed Jan  7 19:10:47 2004
+--- src/share/colldef/kk_KZ.PT154.src	Sun Dec 14 22:40:40 2003
+***************
+*** 0 ****
+--- 1,40 ----
++ # PT154 (backward compatible with ASCII)
++ #
++ # Birsh T <birsh@mail.kz>, 2003-12-12
++ #
++ charmap map.PT154
++ order \
++ # controls
++ 	<NU>;...;<US>;\
++ #
++ 	<NS>;<SP>;!;\";<"6>;<"9>;<<<>;</>/>>;\
++ 	<Nb>;<DO>;\
++ 	%;&;';<'6>;<'9>;\(;\);*;+;\,;-;.;/;\
++ # digits
++ 	0;...;9;\
++ #
++ 	:;\;;\<;=;>;?;<SE>;<PI>;<Co>;<Rg>;<At>;\
++ # uppercase
++ 	A;...;Z;\
++ 	<A=>;<HW>;<B=>;<V=>;<G=>;<G->;<D=>;\
++ 	<X%>;<E=>;<IO>;<Z%>;<Z.>;<Z=>;\
++ 	<I=>;<I'>;<II>;<J=>;<J%>;<K=>;<K%>;<K!>;<BK>;<L=>;\
++ 	<M=>;<N=>;<N%>;<O=>;<O->;<P=>;<R=>;\
++ 	<S=>;<DS>;<T=>;<U=>;<V%>;<U'>;<Y">;\
++ 	<Y->;<F=>;<H=>;<H%>;<HH>;<C=>;<C%>;<C.>;<C!>;<S%>;<Sc>;\
++ 	<=">;<Y=>;<%">;<JE>;<JU>;<JA>;\
++ #
++ 	[;\\;];^;_;`;\
++ # lowercase
++ 	a;...;z;\
++ 	<a=>;<hw>;<b=>;<v=>;<g=>;<g->;<d=>;\
++ 	<x%>;<e=>;<io>;<z%>;<z.>;<z=>;\
++ 	<i=>;<i'>;<ii>;<j=>;<j%>;<k=>;<k%>;<k!>;<bk>;<l=>;\
++ 	<m=>;<n=>;<n%>;<o=>;<o->;<p=>;<r=>;\
++ 	<s=>;<ds>;<t=>;<u=>;<v%>;<u'>;<y">;\
++ 	<y->;<f=>;<h=>;<h%>;<hh>;<c=>;<c%>;<c.>;<c!>;<s%>;<sc>;\
++ 	<='>;<y=>;<%'>;<je>;<ju>;<ja>;\
++ #
++ 	\{;<NO>;|;\};~;<.M>;<DG>;\
++ 	<-N>;<-M>;<:9>;<.3>;\
++ 	<N0>;<sb>;<DT>
+*** /dev/null	Wed Jan  7 19:10:47 2004
+--- src/share/colldef/map.PT154	Sun Dec 14 22:40:40 2003
+***************
+*** 0 ****
+--- 1,257 ----
++ # Birsh T <birsh@mail.kz>, 2003-12-12
++ NU \x00
++ SH \x01
++ SX \x02
++ EX \x03
++ ET \x04
++ EQ \x05
++ AK \x06
++ BL \x07
++ BS \x08
++ HT \x09
++ LF \x0a
++ VT \x0b
++ FF \x0c
++ CR \x0d
++ SO \x0e
++ SI \x0f
++ DL \x10
++ D1 \x11
++ D2 \x12
++ D3 \x13
++ D4 \x14
++ NK \x15
++ SY \x16
++ EB \x17
++ CN \x18
++ EM \x19
++ SB \x1a
++ EC \x1b
++ FS \x1c
++ GS \x1d
++ RS \x1e
++ US \x1f
++ SP \x20
++ ! \x21
++ " \x22
++ Nb \x23
++ DO \x24
++ % \x25
++ & \x26
++ ' \x27
++ ( \x28
++ ) \x29
++ * \x2a
++ + \x2b
++ , \x2c
++ - \x2d
++ . \x2e
++ / \x2f
++ 0 \x30
++ 1 \x31
++ 2 \x32
++ 3 \x33
++ 4 \x34
++ 5 \x35
++ 6 \x36
++ 7 \x37
++ 8 \x38
++ 9 \x39
++ : \x3a
++ ; \x3b
++ < \x3c
++ = \x3d
++ > \x3e
++ ? \x3f
++ At \x40
++ A \x41
++ B \x42
++ C \x43
++ D \x44
++ E \x45
++ F \x46
++ G \x47
++ H \x48
++ I \x49
++ J \x4a
++ K \x4b
++ L \x4c
++ M \x4d
++ N \x4e
++ O \x4f
++ P \x50
++ Q \x51
++ R \x52
++ S \x53
++ T \x54
++ U \x55
++ V \x56
++ W \x57
++ X \x58
++ Y \x59
++ Z \x5a
++ <( \x5b
++ // \x5c
++ )> \x5d
++ '> \x5e
++ _ \x5f
++ '! \x60
++ a \x61
++ b \x62
++ c \x63
++ d \x64
++ e \x65
++ f \x66
++ g \x67
++ h \x68
++ i \x69
++ j \x6a
++ k \x6b
++ l \x6c
++ m \x6d
++ n \x6e
++ o \x6f
++ p \x70
++ q \x71
++ r \x72
++ s \x73
++ t \x74
++ u \x75
++ v \x76
++ w \x77
++ x \x78
++ y \x79
++ z \x7a
++ (! \x7b
++ !! \x7c
++ !) \x7d
++ '? \x7e
++ DT \x7f
++ Z. \x80
++ G- \x81
++ U' \x82
++ g- \x83
++ :9 \x84
++ .3 \x85
++ C. \x86
++ Y" \x87
++ H% \x88
++ y" \x89
++ BK \x8a
++ I' \x8b
++ N% \x8c
++ K% \x8d
++ HH \x8e
++ C! \x8f
++ z. \x90
++ '6 \x91
++ '9 \x92
++ "6 \x93
++ "9 \x94
++ sb \x95
++ -N \x96
++ -M \x97
++ h% \x98
++ c. \x99
++ bk \x9a
++ i' \x9b
++ n% \x9c
++ k% \x9d
++ hh \x9e
++ c! \x9f
++ NS \xa0
++ V% \xa1
++ v% \xa2
++ J% \xa3
++ O- \xa4
++ X% \xa5
++ Y- \xa6
++ SE \xa7
++ IO \xa8
++ Co \xa9
++ HW \xaa
++ << \xab
++ NO \xac
++ u' \xad
++ Rg \xae
++ K! \xaf
++ DG \xb0
++ y- \xb1
++ II \xb2
++ ii \xb3
++ x% \xb4
++ o- \xb5
++ PI \xb6
++ .M \xb7
++ io \xb8
++ N0 \xb9
++ hw \xba
++ >> \xbb
++ j% \xbc
++ DS \xbd
++ ds \xbe
++ k! \xbf
++ A= \xc0
++ B= \xc1
++ V= \xc2
++ G= \xc3
++ D= \xc4
++ E= \xc5
++ Z% \xc6
++ Z= \xc7
++ I= \xc8
++ J= \xc9
++ K= \xca
++ L= \xcb
++ M= \xcc
++ N= \xcd
++ O= \xce
++ P= \xcf
++ R= \xd0
++ S= \xd1
++ T= \xd2
++ U= \xd3
++ F= \xd4
++ H= \xd5
++ C= \xd6
++ C% \xd7
++ S% \xd8
++ Sc \xd9
++ =" \xda
++ Y= \xdb
++ %" \xdc
++ JE \xdd
++ JU \xde
++ JA \xdf
++ a= \xe0
++ b= \xe1
++ v= \xe2
++ g= \xe3
++ d= \xe4
++ e= \xe5
++ z% \xe6
++ z= \xe7
++ i= \xe8
++ j= \xe9
++ k= \xea
++ l= \xeb
++ m= \xec
++ n= \xed
++ o= \xee
++ p= \xef
++ r= \xf0
++ s= \xf1
++ t= \xf2
++ u= \xf3
++ f= \xf4
++ h= \xf5
++ c= \xf6
++ c% \xf7
++ s% \xf8
++ sc \xf9
++ =' \xfa
++ y= \xfb
++ %' \xfc
++ je \xfd
++ ju \xfe
++ ja \xff
+*** /dev/null	Wed Jan  7 19:10:47 2004
+--- src/share/mklocale/kk_KZ.PT154.src	Sun Dec 14 22:40:40 2003
+***************
+*** 0 ****
+--- 1,103 ----
++ /*
++  * LOCALE_CTYPE for PT154 character set (IANA PTCP154)
++  */
++ ENCODING	"NONE"
++ VARIABLE        PT154 character set by Birsh T <birsh@mail.kz>
++ 
++ ALPHA		'A' - 'Z' 'a' - 'z' 0x80 - 0x83 0x86 - 0x90 0x98 - 0x9f
++ ALPHA		0xa1 - 0xa6 0xa8 0xaa 0xad 0xaf 0xb1 - 0xb5 0xb8 0xba
++ ALPHA		0xbc - 0xff
++ CONTROL		0x00 - 0x1f 0x7f
++ DIGIT		'0' - '9'
++ GRAPH		0x21 - 0x7e 0x80 - 0x9f	0xa1 - 0xff
++ LOWER		'a' - 'z' 0x83 0x89 0x90 0x98 - 0x9f 0xa2 0xad 0xb1
++ LOWER		0xb3 - 0xb5 0xb8 0xba 0xbc 0xbe 0xbf 0xe0 - 0xff
++ PUNCT		0x21 - 0x2f 0x3a - 0x40 0x5b - 0x60 0x7b - 0x7e
++ PUNCT		0x84 0x85 0x91 - 0x97 0xa7 0xa9 0xab 0xac 0xae 0xb0 0xb6 0xb7
++ PUNCT		0xb9 0xbb
++ SPACE		0x09 - 0x0d 0x20 0xa0
++ UPPER		'A' - 'Z' 0x80 - 0x82 0x86 - 0x88 0x8a - 0x8f 0xa1 0xa3 - 0xa6
++ UPPER		0xa8 0xaa 0xaf 0xb2 0xbd 0xc0 - 0xdf
++ XDIGIT          '0' - '9' 'a' - 'f' 'A' - 'F'
++ BLANK		' ' '\t' 0xa0
++ PRINT		0x20 - 0x7e 0x80 - 0xff
++ 
++ MAPLOWER       	<'A' - 'Z' : 'a'>
++ MAPLOWER       	<'a' - 'z' : 'a'>
++ MAPLOWER	<0x80  0x90>
++ MAPLOWER	<0x90  0x90>
++ MAPLOWER        <0x81  0x83>
++ MAPLOWER        <0x83  0x83>
++ MAPLOWER        <0x82  0xad>
++ MAPLOWER        <0xad  0xad>
++ MAPLOWER        <0x86  0x99>
++ MAPLOWER        <0x99  0x99>
++ MAPLOWER        <0x87  0x89>
++ MAPLOWER        <0x89  0x89>
++ MAPLOWER        <0x88  0x98>
++ MAPLOWER        <0x98  0x98>
++ MAPLOWER        <0x8a - 0x8f : 0x9a>
++ MAPLOWER        <0x9a - 0x9f : 0x9a>
++ MAPLOWER        <0xa1  0xa2>
++ MAPLOWER        <0xa2  0xa2>
++ MAPLOWER        <0xa3  0xbc>
++ MAPLOWER        <0xbc  0xbc>
++ MAPLOWER        <0xa4  0xb5>
++ MAPLOWER        <0xb5  0xb5>
++ MAPLOWER        <0xa5  0xb4>
++ MAPLOWER        <0xb4  0xb4>
++ MAPLOWER        <0xa6  0xb1>
++ MAPLOWER        <0xb1  0xb1>
++ MAPLOWER        <0xa8  0xb8>
++ MAPLOWER        <0xb8  0xb8>
++ MAPLOWER        <0xaa  0xba>
++ MAPLOWER        <0xba  0xba>
++ MAPLOWER        <0xaf  0xbf>
++ MAPLOWER        <0xbf  0xbf>
++ MAPLOWER        <0xb2  0xb3>
++ MAPLOWER        <0xb3  0xb3>
++ MAPLOWER        <0xbd  0xbe>
++ MAPLOWER        <0xbe  0xbe>
++ MAPLOWER	<0xc0 - 0xdf : 0xe0>
++ MAPLOWER	<0xe0 - 0xff : 0xe0>
++ MAPUPPER       	<'A' - 'Z' : 'A'>
++ MAPUPPER       	<'a' - 'z' : 'A'>
++ MAPUPPER	<0x80  0x80>
++ MAPUPPER	<0x90  0x80>
++ MAPUPPER        <0x81  0x81>
++ MAPUPPER        <0x83  0x81>
++ MAPUPPER        <0x82  0x82>
++ MAPUPPER        <0xad  0x82>
++ MAPUPPER        <0x86  0x86>
++ MAPUPPER        <0x99  0x86>
++ MAPUPPER        <0x87  0x87>
++ MAPUPPER        <0x89  0x87>
++ MAPUPPER        <0x88  0x88>
++ MAPUPPER        <0x98  0x88>
++ MAPUPPER        <0x8a - 0x8f : 0x8a>
++ MAPUPPER        <0x9a - 0x9f : 0x8a>
++ MAPUPPER        <0xa1  0xa1>
++ MAPUPPER        <0xa2  0xa1>
++ MAPUPPER        <0xa3  0xa3>
++ MAPUPPER        <0xbc  0xa3>
++ MAPUPPER        <0xa4  0xa4>
++ MAPUPPER        <0xb5  0xa4>
++ MAPUPPER        <0xa5  0xa5>
++ MAPUPPER        <0xb4  0xa5>
++ MAPUPPER        <0xa6  0xa6>
++ MAPUPPER        <0xb1  0xa6>
++ MAPUPPER        <0xa8  0xa8>
++ MAPUPPER        <0xb8  0xa8>
++ MAPUPPER        <0xaa  0xaa>
++ MAPUPPER        <0xba  0xaa>
++ MAPUPPER        <0xaf  0xaf>
++ MAPUPPER        <0xbf  0xaf>
++ MAPUPPER        <0xb2  0xb2>
++ MAPUPPER        <0xb3  0xb2>
++ MAPUPPER        <0xbd  0xbd>
++ MAPUPPER        <0xbe  0xbd>
++ MAPUPPER	<0xc0 - 0xdf : 0xc0>
++ MAPUPPER	<0xe0 - 0xff : 0xc0>
++ TODIGIT       	<'0' - '9' : 0>
++ TODIGIT       	<'A' - 'F' : 10>
++ TODIGIT       	<'a' - 'f' : 10>
+*** /dev/null	Wed Jan  7 19:10:47 2004
+--- src/share/syscons/keymaps/kk.pt154.kst.kbd	Sun Dec 14 22:40:40 2003
+***************
+*** 0 ****
+--- 1,243 ----
++ # KST KazSSR 903-90 keyboard implementation
++ # Birsh T <birsh@mail.kz>, 2003-12-02
++ #                                                         alt
++ # scan                       cntrl          alt    alt   cntrl lock
++ # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
++ # ------------------------------------------------------------------
++   000   nop    nop    nop    nop    nop    nop    nop    nop     O
++   001   esc    esc    nop    nop    155    155    debug  nop     O
++   002   '1'    '!'    nop    nop    177    161    nop    nop     O
++   003   '2'    '@'    nul    nul    178    192    128    128     O
++   004   '3'    '#'    nop    nop    179    163    nop    nop     O
++   005   '4'    '$'    nop    nop    180    164    nop    nop     O
++   006   '5'    '%'    nop    nop    181    165    nop    nop     O
++   007   '6'    '^'    rs     rs     182    222    158    158     O
++   008   '7'    '&'    nop    nop    183    166    nop    nop     O
++   009   '8'    '*'    nop    nop    184    170    nop    nop     O
++   010   '9'    '('    nop    nop    185    168    nop    nop     O
++   011   '0'    ')'    nop    nop    176    169    nop    nop     O
++   012   '-'    '_'    us     us     173    223    159    159     O
++   013   '='    '+'    nop    nop    189    171    nop    nop     O
++   014   bs     bs     del    del    136    136    255    255     O
++   015   ht     btab   nop    nop    137    btab   nop    nop     O
++   016   'q'    'Q'    dc1    dc1    241    209    145    145     C
++   017   'w'    'W'    etb    etb    247    215    151    151     C
++   018   'e'    'E'    enq    enq    229    197    133    133     C
++   019   'r'    'R'    dc2    dc2    242    210    146    146     C
++   020   't'    'T'    dc4    dc4    244    212    148    148     C
++   021   'y'    'Y'    em     em     249    217    153    153     C
++   022   'u'    'U'    nak    nak    245    213    149    149     C
++   023   'i'    'I'    ht     ht     233    201    137    137     C
++   024   'o'    'O'    si     si     239    207    143    143     C
++   025   'p'    'P'    dle    dle    240    208    144    144     C
++   026   '['    '{'    esc    esc    219    251    155    155     O
++   027   ']'    '}'    gs     gs     221    253    157    157     O
++   028   cr     cr     nl     nl     141    141    138    138     O
++   029   lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl   O
++   030   'a'    'A'    soh    soh    225    193    129    129     C
++   031   's'    'S'    dc3    dc3    243    211    147    147     C
++   032   'd'    'D'    eot    eot    228    196    132    132     C
++   033   'f'    'F'    ack    ack    230    198    134    134     C
++   034   'g'    'G'    bel    bel    231    199    135    135     C
++   035   'h'    'H'    bs     bs     232    200    136    136     C
++   036   'j'    'J'    nl     nl     234    202    138    138     C
++   037   'k'    'K'    vt     vt     235    203    139    139     C
++   038   'l'    'L'    ff     ff     236    204    140    140     C
++   039   ';'    ':'    nop    nop    187    186    nop    nop     O
++   040   '''    '"'    nop    nop    167    162    nop    nop     O
++   041   '`'    '~'    nop    nop    224    254    nop    nop     O
++   042   lshift lshift lshift lshift lshift lshift lshift lshift  O
++   043   '\'    '|'    fs     fs     220    252    156    156     O
++   044   'z'    'Z'    sub    sub    250    218    154    154     C
++   045   'x'    'X'    can    can    248    216    152    152     C
++   046   'c'    'C'    etx    etx    227    195    131    131     C
++   047   'v'    'V'    syn    syn    246    214    150    150     C
++   048   'b'    'B'    stx    stx    226    194    130    130     C
++   049   'n'    'N'    so     so     238    206    142    142     C
++   050   'm'    'M'    cr     cr     237    205    141    141     C
++   051   ','    '<'    nop    nop    172    188    nop    nop     O
++   052   '.'    '>'    nop    nop    174    190    nop    nop     O
++   053   '/'    '?'    nop    nop    175    191    nop    nop     O
++   054   rshift rshift rshift rshift rshift rshift rshift rshift  O
++   055   '*'    '*'    nl     nl     170    170    138    138     O
++   056   lalt   lalt   lalt   lalt   lalt   lalt   lalt   lalt    O
++   057   ' '    ' '    nul    ' '    160    160    susp   160     O
++   058   alock  clock  clock  clock  clock  clock  clock  clock   O
++   059   fkey01 fkey13 fkey25 fkey37 scr01  scr11  scr01  scr11   O
++   060   fkey02 fkey14 fkey26 fkey38 scr02  scr12  scr02  scr12   O
++   061   fkey03 fkey15 fkey27 fkey39 scr03  scr13  scr03  scr13   O
++   062   fkey04 fkey16 fkey28 fkey40 scr04  scr14  scr04  scr14   O
++   063   fkey05 fkey17 fkey29 fkey41 scr05  scr15  scr05  scr15   O
++   064   fkey06 fkey18 fkey30 fkey42 scr06  scr16  scr06  scr16   O
++   065   fkey07 fkey19 fkey31 fkey43 scr07  scr07  scr07  scr07   O
++   066   fkey08 fkey20 fkey32 fkey44 scr08  scr08  scr08  scr08   O
++   067   fkey09 fkey21 fkey33 fkey45 scr09  scr09  scr09  scr09   O
++   068   fkey10 fkey22 fkey34 fkey46 scr10  scr10  scr10  scr10   O
++   069   nlock  nlock  nlock  nlock  nlock  nlock  nlock  nlock   O
++   070   slock  slock  slock  slock  slock  slock  slock  slock   O
++   071   fkey49 '7'    '7'    '7'    183    183    183    183     N
++   072   fkey50 '8'    '8'    '8'    184    184    184    184     N
++   073   fkey51 '9'    '9'    '9'    185    185    185    185     N
++   074   fkey52 '-'    '-'    '-'    173    173    173    173     N
++   075   fkey53 '4'    '4'    '4'    180    180    180    180     N
++   076   fkey54 '5'    '5'    '5'    181    181    181    181     N
++   077   fkey55 '6'    '6'    '6'    182    182    182    182     N
++   078   fkey56 '+'    '+'    '+'    171    171    171    171     N
++   079   fkey57 '1'    '1'    '1'    177    177    177    177     N
++   080   fkey58 '2'    '2'    '2'    178    178    178    178     N
++   081   fkey59 '3'    '3'    '3'    179    179    179    179     N
++   082   fkey60 '0'    '0'    '0'    176    176    176    176     N
++   083   del    '.'    '.'    '.'    174    174    boot   boot    N
++   084   alock  alock  alock  alock  alock  alock  alock  alock   O
++   085   nop    nop    nop    nop    nop    nop    nop    nop     O
++   086   nop    nop    nop    nop    nop    nop    nop    nop     O
++   087   fkey11 fkey23 fkey35 fkey47 scr11  scr11  scr11  scr11   O
++   088   fkey12 fkey24 fkey36 fkey48 scr12  scr12  scr12  scr12   O
++   089   cr     cr     nl     nl     141    141    138    138     O
++   090   rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl   O
++   091   '/'    '/'    nop    nop    175    175    nop    nop     O
++   092   nscr   nscr   debug  debug  nop    nop    nop    nop     O
++   093   ralt   ralt   ralt   ralt   ralt   ralt   ralt   ralt    O
++   094   fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49  O
++   095   fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50  O
++   096   fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51  O
++   097   fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53  O
++   098   fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55  O
++   099   fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57  O
++   100   fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58  O
++   101   fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59  O
++   102   fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60  O
++   103	fkey61 fkey61 fkey61 fkey61 fkey61 fkey61 boot   fkey61  O
++   104   slock  saver  slock  saver  susp   nop    susp   nop     O
++   105	fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62  O
++   106	fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63  O
++   107	fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64  O
++   108   nop    nop    nop    nop    nop    nop    nop    nop     O
++   109   nop    nop    nop    nop    nop    nop    nop    nop     O
++   110   nop    nop    nop    nop    nop    nop    nop    nop     O
++   111   nop    nop    nop    nop    nop    nop    nop    nop     O
++   112   nop    nop    nop    nop    nop    nop    nop    nop     O
++   113   nop    nop    nop    nop    nop    nop    nop    nop     O
++   114   nop    nop    nop    nop    nop    nop    nop    nop     O
++   115   nop    nop    nop    nop    nop    nop    nop    nop     O
++   116   nop    nop    nop    nop    nop    nop    nop    nop     O
++   117   nop    nop    nop    nop    nop    nop    nop    nop     O
++   118   nop    nop    nop    nop    nop    nop    nop    nop     O
++   119   nop    nop    nop    nop    nop    nop    nop    nop     O
++   120   nop    nop    nop    nop    nop    nop    nop    nop     O
++   121   nop    nop    nop    nop    nop    nop    nop    nop     O
++   122   nop    nop    nop    nop    nop    nop    nop    nop     O
++   123   nop    nop    nop    nop    nop    nop    nop    nop     O
++   124   nop    nop    nop    nop    nop    nop    nop    nop     O
++   125   nop    nop    nop    nop    nop    nop    nop    nop     O
++   126   nop    nop    nop    nop    nop    nop    nop    nop     O
++   127   nop    nop    nop    nop    nop    nop    nop    nop     O
++   128   nop    nop    nop    nop    nop    nop    nop    nop     O
++   129   esc    esc    nop    nop    155    155    debug  nop     O
++   130   '"'    '!'    nop    nop    177    161    nop    nop     O
++   131   186    170    nul    nul    178    192    128    128     C
++   132   179    178    nop    nop    179    163    nop    nop     C
++   133   156    140    nop    nop    180    164    nop    nop     C
++   134   131    129    nop    nop    181    165    nop    nop     C
++   135   ','    ';'    rs     rs     182    222    158    158     O
++   136   '.'    ':'    nop    nop    183    166    nop    nop     O
++   137   137    135    nop    nop    184    170    nop    nop     C
++   138   177    166    nop    nop    185    168    nop    nop     C
++   139   157    141    nop    nop    176    169    nop    nop     C
++   140   181    164    us     us     173    223    159    159     C
++   141   158    142    nop    nop    189    171    nop    nop     C
++   142   bs     bs     del    del    136    136    255    255     O
++   143   ht     btab   nop    nop    137    btab   nop    nop     O
++   144   233    201    dc1    dc1    241    209    145    145     C
++   145   246    214    etb    etb    247    215    151    151     C
++   146   243    211    enq    enq    229    197    133    133     C
++   147   234    202    dc2    dc2    242    210    146    146     C
++   148   229    197    dc4    dc4    244    212    148    148     C
++   149   237    205    em     em     249    217    153    153     C
++   150   227    195    nak    nak    245    213    149    149     C
++   151   248    216    ht     ht     233    201    137    137     C
++   152   249    217    si     si     239    207    143    143     C
++   153   231    199    dle    dle    240    208    144    144     C
++   154   245    213    esc    esc    219    251    155    155     C
++   155   250    218    gs     gs     221    253    157    157     C
++   156   cr     cr     nl     nl     141    141    138    138     O
++   157   lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl   O
++   158   244    212    soh    soh    225    193    129    129     C
++   159   251    219    dc3    dc3    243    211    147    147     C
++   160   226    194    eot    eot    228    196    132    132     C
++   161   224    192    ack    ack    230    198    134    134     C
++   162   239    207    bel    bel    231    199    135    135     C
++   163   240    208    bs     bs     232    200    136    136     C
++   164   238    206    nl     nl     234    202    138    138     C
++   165   235    203    vt     vt     235    203    139    139     C
++   166   228    196    ff     ff     236    204    140    140     C
++   167   230    198    nop    nop    187    186    nop    nop     C
++   168   253    221    nop    nop    167    162    nop    nop     C
++   169   '('    ')'    nop    nop    224    254    nop    nop     O
++   170   lshift lshift lshift lshift lshift lshift lshift lshift  O
++   171   '\'    '|'    fs     fs     220    252    156    156     O
++   172   255    223    sub    sub    250    218    154    154     C
++   173   247    215    can    can    248    216    152    152     C
++   174   241    209    etx    etx    227    195    131    131     C
++   175   236    204    syn    syn    246    214    150    150     C
++   176   232    200    stx    stx    226    194    130    130     C
++   177   242    210    so     so     238    206    142    142     C
++   178   252    220    cr     cr     237    205    141    141     C
++   179   225    193    nop    nop    172    188    nop    nop     C
++   180   254    222    nop    nop    174    190    nop    nop     C
++   181   185    '?'    nop    nop    175    191    nop    nop     O
++   182   rshift rshift rshift rshift rshift rshift rshift rshift  O
++   183   '*'    '*'    nl     nl     170    170    138    138     O
++   184   lalt   lalt   lalt   lalt   lalt   lalt   lalt   lalt    O
++   185   ' '    ' '    nul    ' '    160    160    160    160     O
++   186   alock  clock  clock  clock  clock  clock  clock  clock   O
++   187   fkey01 fkey13 fkey25 fkey37 scr01  scr11  scr01  scr11   O
++   188   fkey02 fkey14 fkey26 fkey38 scr02  scr12  scr02  scr12   O
++   189   fkey03 fkey15 fkey27 fkey39 scr03  scr13  scr03  scr13   O
++   190   fkey04 fkey16 fkey28 fkey40 scr04  scr14  scr04  scr14   O
++   191   fkey05 fkey17 fkey29 fkey41 scr05  scr15  scr05  scr15   O
++   192   fkey06 fkey18 fkey30 fkey42 scr06  scr16  scr06  scr16   O
++   193   fkey07 fkey19 fkey31 fkey43 scr07  scr07  scr07  scr07   O
++   194   fkey08 fkey20 fkey32 fkey44 scr08  scr08  scr08  scr08   O
++   195   fkey09 fkey21 fkey33 fkey45 scr09  scr09  scr09  scr09   O
++   196   fkey10 fkey22 fkey34 fkey46 scr10  scr10  scr10  scr10   O
++   197   nlock  nlock  nlock  nlock  nlock  nlock  nlock  nlock   O
++   198   slock  slock  slock  slock  slock  slock  slock  slock   O
++   199   fkey49 '7'    '7'    '7'    183    183    183    183     N
++   200   fkey50 '8'    '8'    '8'    184    184    184    184     N
++   201   fkey51 '9'    '9'    '9'    185    185    185    185     N
++   202   fkey52 '-'    '-'    '-'    173    173    173    173     N
++   203   fkey53 '4'    '4'    '4'    180    180    180    180     N
++   204   fkey54 '5'    '5'    '5'    181    181    181    181     N
++   205   fkey55 '6'    '6'    '6'    182    182    182    182     N
++   206   fkey56 '+'    '+'    '+'    171    171    171    171     N
++   207   fkey57 '1'    '1'    '1'    177    177    177    177     N
++   208   fkey58 '2'    '2'    '2'    178    178    178    178     N
++   209   fkey59 '3'    '3'    '3'    179    179    179    179     N
++   210   fkey60 '0'    '0'    '0'    176    176    176    176     N
++   211   del    '.'    '.'    '.'    174    174    boot   boot    N
++   212   alock  alock  alock  alock  alock  alock  alock  alock   O
++   213   nop    nop    nop    nop    nop    nop    nop    nop     O
++   214   nop    nop    nop    nop    nop    nop    nop    nop     O
++   215   fkey11 fkey23 fkey35 fkey47 scr11  scr11  scr11  scr11   O
++   216   fkey12 fkey24 fkey36 fkey48 scr12  scr12  scr12  scr12   O
++   217   cr     cr     nl     nl     141    141    138    138     O
++   218   rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl   O
++   219   '/'    '/'    nop    nop    175    175    nop    nop     O
++   220   nscr   nscr   debug  debug  nop    nop    nop    nop     O
++   221   ralt   ralt   ralt   ralt   ralt   ralt   ralt   ralt    O
++   222   fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49  O
++   223   fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50  O
++   224   fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51  O
++   225   fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53  O
++   226   fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55  O
++   227   fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57  O
++   228   fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58  O
++   229   fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59  O
++   230   fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60  O
++   231	fkey61 fkey61 fkey61 fkey61 fkey61 fkey61 boot   fkey61  O
++   232   slock  saver  slock  saver  susp   nop    susp   nop     O
++   233	fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62  O
++   234	fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63  O
++   235	fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64  O
++   236   nop    nop    nop    nop    nop    nop    nop    nop     O
+*** /dev/null	Wed Jan  7 19:10:47 2004
+--- src/share/syscons/keymaps/kk.pt154.io.kbd	Sun Dec 14 22:40:40 2003
+***************
+*** 0 ****
+--- 1,243 ----
++ # KST KazSSR 903-90 with CYRILLIC LETTER IO
++ # Birsh T <birsh@mail.kz>, 2003-12-02
++ #                                                         alt
++ # scan                       cntrl          alt    alt   cntrl lock
++ # code  base   shift  cntrl  shift  alt    shift  cntrl  shift state
++ # ------------------------------------------------------------------
++   000   nop    nop    nop    nop    nop    nop    nop    nop     O
++   001   esc    esc    nop    nop    155    155    debug  nop     O
++   002   '1'    '!'    nop    nop    177    161    nop    nop     O
++   003   '2'    '@'    nul    nul    178    192    128    128     O
++   004   '3'    '#'    nop    nop    179    163    nop    nop     O
++   005   '4'    '$'    nop    nop    180    164    nop    nop     O
++   006   '5'    '%'    nop    nop    181    165    nop    nop     O
++   007   '6'    '^'    rs     rs     182    222    158    158     O
++   008   '7'    '&'    nop    nop    183    166    nop    nop     O
++   009   '8'    '*'    nop    nop    184    170    nop    nop     O
++   010   '9'    '('    nop    nop    185    168    nop    nop     O
++   011   '0'    ')'    nop    nop    176    169    nop    nop     O
++   012   '-'    '_'    us     us     173    223    159    159     O
++   013   '='    '+'    nop    nop    189    171    nop    nop     O
++   014   bs     bs     del    del    136    136    255    255     O
++   015   ht     btab   nop    nop    137    btab   nop    nop     O
++   016   'q'    'Q'    dc1    dc1    241    209    145    145     C
++   017   'w'    'W'    etb    etb    247    215    151    151     C
++   018   'e'    'E'    enq    enq    229    197    133    133     C
++   019   'r'    'R'    dc2    dc2    242    210    146    146     C
++   020   't'    'T'    dc4    dc4    244    212    148    148     C
++   021   'y'    'Y'    em     em     249    217    153    153     C
++   022   'u'    'U'    nak    nak    245    213    149    149     C
++   023   'i'    'I'    ht     ht     233    201    137    137     C
++   024   'o'    'O'    si     si     239    207    143    143     C
++   025   'p'    'P'    dle    dle    240    208    144    144     C
++   026   '['    '{'    esc    esc    219    251    155    155     O
++   027   ']'    '}'    gs     gs     221    253    157    157     O
++   028   cr     cr     nl     nl     141    141    138    138     O
++   029   lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl   O
++   030   'a'    'A'    soh    soh    225    193    129    129     C
++   031   's'    'S'    dc3    dc3    243    211    147    147     C
++   032   'd'    'D'    eot    eot    228    196    132    132     C
++   033   'f'    'F'    ack    ack    230    198    134    134     C
++   034   'g'    'G'    bel    bel    231    199    135    135     C
++   035   'h'    'H'    bs     bs     232    200    136    136     C
++   036   'j'    'J'    nl     nl     234    202    138    138     C
++   037   'k'    'K'    vt     vt     235    203    139    139     C
++   038   'l'    'L'    ff     ff     236    204    140    140     C
++   039   ';'    ':'    nop    nop    187    186    nop    nop     O
++   040   '''    '"'    nop    nop    167    162    nop    nop     O
++   041   '`'    '~'    nop    nop    224    254    nop    nop     O
++   042   lshift lshift lshift lshift lshift lshift lshift lshift  O
++   043   '\'    '|'    fs     fs     220    252    156    156     O
++   044   'z'    'Z'    sub    sub    250    218    154    154     C
++   045   'x'    'X'    can    can    248    216    152    152     C
++   046   'c'    'C'    etx    etx    227    195    131    131     C
++   047   'v'    'V'    syn    syn    246    214    150    150     C
++   048   'b'    'B'    stx    stx    226    194    130    130     C
++   049   'n'    'N'    so     so     238    206    142    142     C
++   050   'm'    'M'    cr     cr     237    205    141    141     C
++   051   ','    '<'    nop    nop    172    188    nop    nop     O
++   052   '.'    '>'    nop    nop    174    190    nop    nop     O
++   053   '/'    '?'    nop    nop    175    191    nop    nop     O
++   054   rshift rshift rshift rshift rshift rshift rshift rshift  O
++   055   '*'    '*'    nl     nl     170    170    138    138     O
++   056   lalt   lalt   lalt   lalt   lalt   lalt   lalt   lalt    O
++   057   ' '    ' '    nul    ' '    160    160    susp   160     O
++   058   alock  clock  clock  clock  clock  clock  clock  clock   O
++   059   fkey01 fkey13 fkey25 fkey37 scr01  scr11  scr01  scr11   O
++   060   fkey02 fkey14 fkey26 fkey38 scr02  scr12  scr02  scr12   O
++   061   fkey03 fkey15 fkey27 fkey39 scr03  scr13  scr03  scr13   O
++   062   fkey04 fkey16 fkey28 fkey40 scr04  scr14  scr04  scr14   O
++   063   fkey05 fkey17 fkey29 fkey41 scr05  scr15  scr05  scr15   O
++   064   fkey06 fkey18 fkey30 fkey42 scr06  scr16  scr06  scr16   O
++   065   fkey07 fkey19 fkey31 fkey43 scr07  scr07  scr07  scr07   O
++   066   fkey08 fkey20 fkey32 fkey44 scr08  scr08  scr08  scr08   O
++   067   fkey09 fkey21 fkey33 fkey45 scr09  scr09  scr09  scr09   O
++   068   fkey10 fkey22 fkey34 fkey46 scr10  scr10  scr10  scr10   O
++   069   nlock  nlock  nlock  nlock  nlock  nlock  nlock  nlock   O
++   070   slock  slock  slock  slock  slock  slock  slock  slock   O
++   071   fkey49 '7'    '7'    '7'    183    183    183    183     N
++   072   fkey50 '8'    '8'    '8'    184    184    184    184     N
++   073   fkey51 '9'    '9'    '9'    185    185    185    185     N
++   074   fkey52 '-'    '-'    '-'    173    173    173    173     N
++   075   fkey53 '4'    '4'    '4'    180    180    180    180     N
++   076   fkey54 '5'    '5'    '5'    181    181    181    181     N
++   077   fkey55 '6'    '6'    '6'    182    182    182    182     N
++   078   fkey56 '+'    '+'    '+'    171    171    171    171     N
++   079   fkey57 '1'    '1'    '1'    177    177    177    177     N
++   080   fkey58 '2'    '2'    '2'    178    178    178    178     N
++   081   fkey59 '3'    '3'    '3'    179    179    179    179     N
++   082   fkey60 '0'    '0'    '0'    176    176    176    176     N
++   083   del    '.'    '.'    '.'    174    174    boot   boot    N
++   084   alock  alock  alock  alock  alock  alock  alock  alock   O
++   085   nop    nop    nop    nop    nop    nop    nop    nop     O
++   086   nop    nop    nop    nop    nop    nop    nop    nop     O
++   087   fkey11 fkey23 fkey35 fkey47 scr11  scr11  scr11  scr11   O
++   088   fkey12 fkey24 fkey36 fkey48 scr12  scr12  scr12  scr12   O
++   089   cr     cr     nl     nl     141    141    138    138     O
++   090   rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl   O
++   091   '/'    '/'    nop    nop    175    175    nop    nop     O
++   092   nscr   nscr   debug  debug  nop    nop    nop    nop     O
++   093   ralt   ralt   ralt   ralt   ralt   ralt   ralt   ralt    O
++   094   fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49  O
++   095   fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50  O
++   096   fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51  O
++   097   fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53  O
++   098   fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55  O
++   099   fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57  O
++   100   fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58  O
++   101   fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59  O
++   102   fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60  O
++   103	fkey61 fkey61 fkey61 fkey61 fkey61 fkey61 boot   fkey61  O
++   104   slock  saver  slock  saver  susp   nop    susp   nop     O
++   105	fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62  O
++   106	fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63  O
++   107	fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64  O
++   108   nop    nop    nop    nop    nop    nop    nop    nop     O
++   109   nop    nop    nop    nop    nop    nop    nop    nop     O
++   110   nop    nop    nop    nop    nop    nop    nop    nop     O
++   111   nop    nop    nop    nop    nop    nop    nop    nop     O
++   112   nop    nop    nop    nop    nop    nop    nop    nop     O
++   113   nop    nop    nop    nop    nop    nop    nop    nop     O
++   114   nop    nop    nop    nop    nop    nop    nop    nop     O
++   115   nop    nop    nop    nop    nop    nop    nop    nop     O
++   116   nop    nop    nop    nop    nop    nop    nop    nop     O
++   117   nop    nop    nop    nop    nop    nop    nop    nop     O
++   118   nop    nop    nop    nop    nop    nop    nop    nop     O
++   119   nop    nop    nop    nop    nop    nop    nop    nop     O
++   120   nop    nop    nop    nop    nop    nop    nop    nop     O
++   121   nop    nop    nop    nop    nop    nop    nop    nop     O
++   122   nop    nop    nop    nop    nop    nop    nop    nop     O
++   123   nop    nop    nop    nop    nop    nop    nop    nop     O
++   124   nop    nop    nop    nop    nop    nop    nop    nop     O
++   125   nop    nop    nop    nop    nop    nop    nop    nop     O
++   126   nop    nop    nop    nop    nop    nop    nop    nop     O
++   127   nop    nop    nop    nop    nop    nop    nop    nop     O
++   128   nop    nop    nop    nop    nop    nop    nop    nop     O
++   129   esc    esc    nop    nop    155    155    debug  nop     O
++   130   '"'    '!'    nop    nop    177    161    nop    nop     O
++   131   186    170    nul    nul    178    192    128    128     C
++   132   179    178    nop    nop    179    163    nop    nop     C
++   133   156    140    nop    nop    180    164    nop    nop     C
++   134   131    129    nop    nop    181    165    nop    nop     C
++   135   ','    ';'    rs     rs     182    222    158    158     O
++   136   '.'    ':'    nop    nop    183    166    nop    nop     O
++   137   137    135    nop    nop    184    170    nop    nop     C
++   138   177    166    nop    nop    185    168    nop    nop     C
++   139   157    141    nop    nop    176    169    nop    nop     C
++   140   181    164    us     us     173    223    159    159     C
++   141   158    142    nop    nop    189    171    nop    nop     C
++   142   bs     bs     del    del    136    136    255    255     O
++   143   ht     btab   nop    nop    137    btab   nop    nop     O
++   144   233    201    dc1    dc1    241    209    145    145     C
++   145   246    214    etb    etb    247    215    151    151     C
++   146   243    211    enq    enq    229    197    133    133     C
++   147   234    202    dc2    dc2    242    210    146    146     C
++   148   229    197    dc4    dc4    244    212    148    148     C
++   149   237    205    em     em     249    217    153    153     C
++   150   227    195    nak    nak    245    213    149    149     C
++   151   248    216    ht     ht     233    201    137    137     C
++   152   249    217    si     si     239    207    143    143     C
++   153   231    199    dle    dle    240    208    144    144     C
++   154   245    213    esc    esc    219    251    155    155     C
++   155   250    218    gs     gs     221    253    157    157     C
++   156   cr     cr     nl     nl     141    141    138    138     O
++   157   lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl  lctrl   O
++   158   244    212    soh    soh    225    193    129    129     C
++   159   251    219    dc3    dc3    243    211    147    147     C
++   160   226    194    eot    eot    228    196    132    132     C
++   161   224    192    ack    ack    230    198    134    134     C
++   162   239    207    bel    bel    231    199    135    135     C
++   163   240    208    bs     bs     232    200    136    136     C
++   164   238    206    nl     nl     234    202    138    138     C
++   165   235    203    vt     vt     235    203    139    139     C
++   166   228    196    ff     ff     236    204    140    140     C
++   167   230    198    nop    nop    187    186    nop    nop     C
++   168   253    221    nop    nop    167    162    nop    nop     C
++   169   '('    ')'    nop    nop    224    254    nop    nop     O
++   170   lshift lshift lshift lshift lshift lshift lshift lshift  O
++   171   184    168    fs     fs     220    252    156    156     C
++   172   255    223    sub    sub    250    218    154    154     C
++   173   247    215    can    can    248    216    152    152     C
++   174   241    209    etx    etx    227    195    131    131     C
++   175   236    204    syn    syn    246    214    150    150     C
++   176   232    200    stx    stx    226    194    130    130     C
++   177   242    210    so     so     238    206    142    142     C
++   178   252    220    cr     cr     237    205    141    141     C
++   179   225    193    nop    nop    172    188    nop    nop     C
++   180   254    222    nop    nop    174    190    nop    nop     C
++   181   185    '?'    nop    nop    175    191    nop    nop     O
++   182   rshift rshift rshift rshift rshift rshift rshift rshift  O
++   183   '*'    '*'    nl     nl     170    170    138    138     O
++   184   lalt   lalt   lalt   lalt   lalt   lalt   lalt   lalt    O
++   185   ' '    ' '    nul    ' '    160    160    160    160     O
++   186   alock  clock  clock  clock  clock  clock  clock  clock   O
++   187   fkey01 fkey13 fkey25 fkey37 scr01  scr11  scr01  scr11   O
++   188   fkey02 fkey14 fkey26 fkey38 scr02  scr12  scr02  scr12   O
++   189   fkey03 fkey15 fkey27 fkey39 scr03  scr13  scr03  scr13   O
++   190   fkey04 fkey16 fkey28 fkey40 scr04  scr14  scr04  scr14   O
++   191   fkey05 fkey17 fkey29 fkey41 scr05  scr15  scr05  scr15   O
++   192   fkey06 fkey18 fkey30 fkey42 scr06  scr16  scr06  scr16   O
++   193   fkey07 fkey19 fkey31 fkey43 scr07  scr07  scr07  scr07   O
++   194   fkey08 fkey20 fkey32 fkey44 scr08  scr08  scr08  scr08   O
++   195   fkey09 fkey21 fkey33 fkey45 scr09  scr09  scr09  scr09   O
++   196   fkey10 fkey22 fkey34 fkey46 scr10  scr10  scr10  scr10   O
++   197   nlock  nlock  nlock  nlock  nlock  nlock  nlock  nlock   O
++   198   slock  slock  slock  slock  slock  slock  slock  slock   O
++   199   fkey49 '7'    '7'    '7'    183    183    183    183     N
++   200   fkey50 '8'    '8'    '8'    184    184    184    184     N
++   201   fkey51 '9'    '9'    '9'    185    185    185    185     N
++   202   fkey52 '-'    '-'    '-'    173    173    173    173     N
++   203   fkey53 '4'    '4'    '4'    180    180    180    180     N
++   204   fkey54 '5'    '5'    '5'    181    181    181    181     N
++   205   fkey55 '6'    '6'    '6'    182    182    182    182     N
++   206   fkey56 '+'    '+'    '+'    171    171    171    171     N
++   207   fkey57 '1'    '1'    '1'    177    177    177    177     N
++   208   fkey58 '2'    '2'    '2'    178    178    178    178     N
++   209   fkey59 '3'    '3'    '3'    179    179    179    179     N
++   210   fkey60 '0'    '0'    '0'    176    176    176    176     N
++   211   del    '.'    '.'    '.'    174    174    boot   boot    N
++   212   alock  alock  alock  alock  alock  alock  alock  alock   O
++   213   nop    nop    nop    nop    nop    nop    nop    nop     O
++   214   nop    nop    nop    nop    nop    nop    nop    nop     O
++   215   fkey11 fkey23 fkey35 fkey47 scr11  scr11  scr11  scr11   O
++   216   fkey12 fkey24 fkey36 fkey48 scr12  scr12  scr12  scr12   O
++   217   cr     cr     nl     nl     141    141    138    138     O
++   218   rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl  rctrl   O
++   219   '/'    '/'    nop    nop    175    175    nop    nop     O
++   220   nscr   nscr   debug  debug  nop    nop    nop    nop     O
++   221   ralt   ralt   ralt   ralt   ralt   ralt   ralt   ralt    O
++   222   fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49 fkey49  O
++   223   fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50 fkey50  O
++   224   fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51 fkey51  O
++   225   fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53 fkey53  O
++   226   fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55 fkey55  O
++   227   fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57 fkey57  O
++   228   fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58 fkey58  O
++   229   fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59 fkey59  O
++   230   fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60 fkey60  O
++   231	fkey61 fkey61 fkey61 fkey61 fkey61 fkey61 boot   fkey61  O
++   232   slock  saver  slock  saver  susp   nop    susp   nop     O
++   233	fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62 fkey62  O
++   234	fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63 fkey63  O
++   235	fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64 fkey64  O
++   236   nop    nop    nop    nop    nop    nop    nop    nop     O
+*** current/src/share/colldef/Makefile	Sat Jan 10 00:38:02 2004
+--- src/share/colldef/Makefile	Sat Jan 10 00:17:06 2004
+***************
+*** 21,26 ****
+--- 21,27 ----
+  		hy_AM.ARMSCII-8 \
+  		is_IS.ISO8859-1 \
+  		is_IS.ISO8859-15 \
++ 		kk_KZ.PT154 \
+  		la_LN.ISO8859-1 \
+  		la_LN.ISO8859-15 \
+  		la_LN.ISO8859-2 \
+***************
+*** 79,84 ****
+--- 80,86 ----
+  hy_AM.ARMSCII-8.out:    map.ARMSCII-8
+  is_IS.ISO8859-15.out:   map.ISO8859-15
+  is_IS.ISO8859-1.out:    map.ISO8859-1
++ kk_KZ.PT154.out:	map.PT154
+  la_LN.ISO8859-15.out:   map.ISO8859-15
+  la_LN.ISO8859-1.out:    map.ISO8859-1
+  la_LN.ISO8859-2.out:    map.ISO8859-2
+*** current/src/share/mklocale/Makefile	Sat Jan 10 00:38:17 2004
+--- src/share/mklocale/Makefile	Sat Jan 10 00:24:40 2004
+***************
+*** 11,16 ****
+--- 11,17 ----
+  		hy_AM.ARMSCII-8 \
+  		ja_JP.SJIS \
+  		ja_JP.eucJP \
++ 		kk_KZ.PT154 \
+  		ko_KR.CP949 \
+  		ko_KR.eucKR \
+  		la_LN.ISO8859-1 \
+*** current/src/share/syscons/keymaps/Makefile	Sat Jan 10 00:38:42 2004
+--- src/share/syscons/keymaps/Makefile	Sat Jan 10 00:27:56 2004
+***************
+*** 23,28 ****
+--- 23,29 ----
+  KEYMAPS+= it.iso.kbd
+  KEYMAPS+= iw.iso8.kbd
+  KEYMAPS+= jp.106.kbd jp.106x.kbd jp.pc98.kbd jp.pc98.iso.kbd
++ KEYMAPS+= kk.pt154.kst.kbd kk.pt154.io.kbd
+  KEYMAPS+= latinamerican.kbd latinamerican.iso.acc.kbd
+  KEYMAPS+= lt.iso4.kbd
+  KEYMAPS+= norwegian.iso.kbd norwegian.dvorak.kbd
+*** current/src/share/syscons/keymaps/INDEX.keymaps	Sat Jan 10 00:38:42 2004
+--- src/share/syscons/keymaps/INDEX.keymaps	Sat Jan 10 00:32:29 2004
+***************
+*** 4,10 ****
+  #
+  # Format <file>:<lang>:<description>
+  #
+! # lang: ar bg cs da de el en es fi fr hr hu hy is it iw ja ko nl no pl
+  #       pt ro ru sh sk sl sv tr uk zh
+  # lang: lang,lang
+  #
+--- 4,10 ----
+  #
+  # Format <file>:<lang>:<description>
+  #
+! # lang: ar bg cs da de el en es fi fr hr hu hy is it iw ja kk ko nl no pl
+  #       pt ro ru sh sk sl sv tr uk zh
+  # lang: lang,lang
+  #
+***************
+*** 221,226 ****
+--- 221,229 ----
+  jp.pc98.kbd:en:Japanese PC-98x1
+  
+  jp.pc98.iso.kbd:en:Japanese PC-98x1 (ISO)
++ 
++ kk.pt154.kst.kbd:en:Kazakh PT154 codepage
++ kk.pt154.io.kbd:en:Kazakh PT154 codepage
+  
+  latinamerican.kbd:en:Latin American
+  latinamerican.kbd:de:Latein Amerikanisch
+*** current/src/share/monetdef/Makefile	Sat Jan 10 01:06:36 2004
+--- src/share/monetdef/Makefile	Sat Jan 10 01:12:58 2004
+***************
+*** 34,39 ****
+--- 34,40 ----
+  		is_IS.ISO8859-1 \
+  		it_IT.ISO8859-1 \
+  		ja_JP.eucJP \
++ 		kk_KZ.PT154 \
+  		ko_KR.eucKR \
+  		lt_LT.ISO8859-13 \
+  		nl_BE.ISO8859-1 \
+*** current/src/share/msgdef/Makefile	Sat Jan 10 01:07:33 2004
+--- src/share/msgdef/Makefile	Sat Jan 10 01:14:15 2004
+***************
+*** 29,34 ****
+--- 29,35 ----
+  		hy_AM.ARMSCII-8 \
+  		is_IS.ISO8859-1 \
+  		it_IT.ISO8859-1 \
++ 		kk_KZ.PT154 \
+  		lt_LT.ISO8859-13 \
+  		nl_NL.ISO8859-1 \
+  		no_NO.ISO8859-1 \
+*** current/src/share/numericdef/Makefile	Sat Jan 10 01:08:12 2004
+--- src/share/numericdef/Makefile	Sat Jan 10 01:16:06 2004
+***************
+*** 25,30 ****
+--- 25,31 ----
+  		is_IS.ISO8859-1 \
+  		it_IT.ISO8859-1 \
+  		ja_JP.eucJP \
++ 		kk_KZ.PT154 \
+  		ko_KR.eucKR \
+  		lt_LT.ISO8859-13 \
+  		nl_NL.ISO8859-1 \
+*** current/src/share/timedef/Makefile	Sat Jan 10 01:09:10 2004
+--- src/share/timedef/Makefile	Sat Jan 10 01:16:50 2004
+***************
+*** 28,33 ****
+--- 28,34 ----
+  		ja_JP.eucJP \
+  		ja_JP.SJIS \
+  		it_IT.ISO8859-1 \
++ 		kk_KZ.PT154 \
+  		ko_KR.eucKR \
+  		la_LN.ISO8859-1 \
+  		lt_LT.ISO8859-4 \
+*** /dev/null	Sat Jan 10 21:29:50 2004
+--- src/share/monetdef/kk_KZ.PT154.src	Sat Jan 10 22:05:02 2004
+***************
+*** 0 ****
+--- 1,35 ----
++ #
++ # WARNING: spaces may be essential at the end of lines
++ # WARNING: empty lines are essential too
++ #
++ # int_curr_symbol (last character always SPACE)
++ KZT 
++ # currency_symbol
++ тг.
++ # mon_decimal_point
++ ,
++ # mon_thousands_sep
++  
++ # mon_grouping, separated by ;
++ 3;3
++ # positive_sign
++ 
++ # negative_sign
++ -
++ # int_frac_digits
++ 2
++ # frac_digits
++ 2
++ # p_cs_precedes
++ 0
++ # p_sep_by_space
++ 1
++ # n_cs_precedes
++ 0
++ # n_sep_by_space
++ 1
++ # p_sign_posn
++ 1
++ # n_sign_posn
++ 1
++ # EOF
+*** /dev/null	Sat Jan 10 21:29:50 2004
+--- src/share/msgdef/kk_KZ.PT154.src	Sat Jan 10 22:07:29 2004
+***************
+*** 0 ****
+--- 1,13 ----
++ #
++ # WARNING: spaces may be essential at the end of lines
++ # WARNING: empty lines are essential too
++ #
++ # yesexpr
++ ^[иИyY].*
++ # noexpr
++ ^[жЖnN].*
++ # yesstr
++ ия
++ # nostr
++ жок
++ # EOF
+*** /dev/null	Sat Jan 10 21:29:50 2004
+--- src/share/numericdef/kk_KZ.PT154.src	Sat Jan 10 22:08:44 2004
+***************
+*** 0 ****
+--- 1,11 ----
++ #
++ # WARNING: spaces may be essential at the end of lines
++ # WARNING: empty lines are essential too
++ #
++ # decimal_point
++ ,
++ # thousands_sep
++  
++ # grouping, separated by ;
++ 3;3
++ # EOF
+*** /dev/null	Sat Jan 10 21:29:50 2004
+--- src/share/timedef/kk_KZ.PT154.src	Sat Jan 10 22:14:03 2004
+***************
+*** 0 ****
+--- 1,101 ----
++ #
++ # WARNING: spaces may be essential at the end of lines
++ # WARNING: empty lines are essential too
++ #
++ # Short months names
++ #
++ ќањ
++ аќп
++ нау
++ сєу
++ мам
++ мау
++ шіл
++ там
++ ќыр
++ ќаз
++ ќар
++ жел
++ #
++ # Long months names
++ #
++ ќањтар
++ аќпан
++ наурыз
++ сєуір
++ мамыр
++ маусым
++ шілде
++ тамыз
++ ќырк‰йек
++ ќазан
++ ќараша
++ желтоќсан
++ #
++ # Short weekdays names
++ #
++ жк
++ дс
++ сс
++ ср
++ бс
++ жм
++ сн
++ #
++ # Long weekdays names
++ #
++ жексенбі
++ д‰йсенбі
++ сейсенбі
++ сєрсенбі
++ бейсенбі
++ ж±ма
++ сенбі
++ #
++ # X_fmt
++ #
++ %H:%M:%S
++ #
++ # x_fmt
++ #
++ %d.%m.%Y
++ #
++ # c_fmt
++ #
++ %A, %e %B %Y ж. %X
++ #
++ # am
++ #
++ 
++ #
++ # pm
++ #
++ 
++ #
++ # date_fmt
++ #
++ %A, %e %B %Y ж. %X (%Z)
++ #
++ # Long month names in alternative form
++ #
++ ќантар
++ аќпан
++ наурыз
++ сєуір
++ мамыр
++ маусым
++ шілде
++ тамыз
++ ќырк‰йек
++ ќазан
++ ќараша
++ желтоќсан
++ #
++ # md_order
++ #
++ dm
++ #
++ # ampm_fmt
++ #
++ 
++ # EOF

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Документация | Linukz.org</title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name="keywords" content="Linux, Линукс, FreeBSD, Казахский, Казахский язык, Локаль, Locale, kk_KZ, PT154, RK1048, KZ-1048, Шрифт, Шрифты, Консоль, Console, Клавиатурная раскладка, Клавиатура, Раскладка, Казахская раскладка, Казахская клавиатура, Документация, Debian, Дебиан, Казахский Linux, Казахский Линукс">
+<link rel=stylesheet type="text/css" href="../default.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<!--#include virtual="../header.html" -->
+
+<h2>Документация</h2>
+
+<P>
+<DL>
+  <DT><A href="/doc/PTCP154.txt">PTCP154.txt</A>
+  <DD>Спецификация кодировки PT154.
+  <DT><A href="/doc/KZ-1048.txt">KZ-1048.txt</A>
+  <DD>Спецификация кодировки KZ-1048 (aka RK1048).
+  <DT><A href="/doc/debian_etch_kazakh_howto.pdf">debian_etch_kazakh_howto.pdf</A>
+  <DD>Инструкция по настройке Debian GNU/Linux 4.0 для работы с казахским
+  языком.
+  <P><A href="/doc/debian_etch_kazakh_howto/index.html">HTML-версия</A>
+  документа. </P></DD></DL>
+</P>
+
+<!--#include virtual="../footer.html" -->
+
+</body>
+</html>

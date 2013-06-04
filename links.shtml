@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Ресурсы | Linukz.org</title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name="keywords" content="Linux, Линукс, FreeBSD, Казахский, Казахский язык, Локаль, Locale, kk_KZ, PT154, RK1048, KZ-1048, Шрифт, Шрифты, Консоль, Console, Клавиатурная раскладка, Клавиатура, Раскладка, Казахская раскладка, Казахская клавиатура, Документация, Debian, Дебиан, Казахский Linux, Казахский Линукс">
+<link rel=stylesheet type="text/css" href="default.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<!--#include virtual="header.html" -->
+
+<h2>Ресурсы</h2>
+
+<P>
+<DL>
+  <DT><A 
+  href="http://www.sci.kz/~sairan/kazwin95.html">http://www.sci.kz/~sairan/kazwin95.html</A> 
+
+  <DD><EM>Правильный</EM> драйвер поддержки казахского языка для M$ Windows. Все 
+  о казахских <A href="http://www.sci.kz/~sairan/kazcode/">кодировках</A> и <A 
+  href="http://www.sci.kz/~sairan/keyboard/kzkbd.html">раскладках 
+  клавиатуры</A>. <A 
+  href="http://www.sci.kz/~sairan/kk_unix/kk_kde.html">Проект</A> локализации KDE 
+  на казахский язык. <A 
+  href="http://www.sci.kz/~sairan/kk_unix/kk_keyboard.html">Настройка</A> локали 
+  и клавиатуры в X Window. 
+  <DT><A href="http://forum.gnu.kz/">forum.gnu.kz</A> 
+  <DD>Форум портала GNU.kz. 
+  <DT><A href="http://bb.ct.kz/index.php?showforum=4">bb.ct.kz</A> 
+  <DD>Linux-форум конференции Центра Тяжести. 
+  <DT><A href="http://trac.gnudev.kz/l10n">trac.gnudev.kz/l10n</A> 
+  <DD>Локализация СПО на казахский язык.
+  <DT><A href="http://gnudev.kz">gnudev.kz</A> 
+  <DD>Бесплатные Trac и Subversion для казахстанских разработчиков СПО.
+  <DT><A href="http://mozilla.kz">mozilla.kz</A> 
+  <DD>Mozilla Firefox на казахском языке.
+  <DT><A href="http://linuxforum.kz">linuxforum.kz</A> 
+  <DD>Линуксфорум Казахстан
+  <DT><A href="http://baurzhan.info">baurzhan.info</A> 
+  <DD>О Линуксе на казахском.
+  <DT><A href="http://gamedev.kz">gamedev.kz</A> 
+  <DD>Сообщество казахстанских разработчиков игр. 
+  <DT><A href="irc://irc.kz/#linux">irc.kz/#linux</A> 
+  <DD>Добро пожаловать на канал #linux в IRC-сети <A 
+  href="http://www.irc.kz/">KZNET</A>! </DD></DL>
+</p>
+
+<small>Last update: 2009-08-23</small>
+
+<!--#include virtual="footer.html" -->
+
+</BODY>
+</HTML>

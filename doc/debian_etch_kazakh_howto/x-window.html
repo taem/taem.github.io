@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3. X Window</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.0">
+<link rel="start" href="index.html" title="Kazakh Language for Debian GNU/Linux 4.0">
+<link rel="up" href="index.html" title="Kazakh Language for Debian GNU/Linux 4.0">
+<link rel="prev" href="console.html" title="2. Консоль">
+<link rel="next" href="resources.html" title="4. Ресурсы">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">3. X Window</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="console.html">Пред.</a> </td>
+<th width="60%" align="center"> </th>
+<td width="20%" align="right"> <a accesskey="n" href="resources.html">След.</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1" lang="ru">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="x-window"></a>3. X Window</h2></div></div></div>
+<p>Сразу оговорюсь — настройка будет описываться для оконного менеджера <span class="application">Fluxbox</span> и переключателя состояния клавиатуры <span class="application">xxkb</span>. Для других оконных менеджеров/Desktop Environment возможно необходимо будет произвести дополнительные действия. По идее, настройка <span class="application">X.org</span> должна быть одинакова для всех оконных менеджеров.</p>
+<div class="sect2" lang="ru">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="xorg"></a>3.1. X.org</h3></div></div></div>
+<p>Во-первых необходимо отредактировать конфигурационный файл X-сервера — обычно это <code class="filename">/etc/X11/xorg.conf</code>. То есть добавить казахскую раскладку <code class="literal">kz</code>. В итоге, у вас должно получится примерно следующее:</p>
+<pre class="programlisting">
+Section "InputDevice"
+       Identifier     "Generic Keyboard"
+       Driver         "keyboard"
+       Option         "CoreKeyboard"
+       Option         "XkbRules"        "xfree86"
+       Option         "XkbModel"        "pc105"
+       Option         "XkbLayout"       "us,kz"
+       Option         "XkbOptions"      "grp:ctrl_shift_toggle"
+EndSection
+</pre>
+<p>Во-вторых необходимо отредактировать следующие файлы:</p>
+<div class="orderedlist"><ol type="1">
+<li><p><code class="filename">/usr/share/X11/locale/compose.dir</code></p></li>
+<li><p><code class="filename">/usr/share/X11/locale/locale.dir</code></p></li>
+</ol></div>
+<p>А именно: добавить строчки</p>
+<pre class="programlisting">
+en_US.UTF-8/Compose     kk_KZ.UTF-8
+en_US.UTF-8/Compose:    kk_KZ.UTF-8
+</pre>
+<p>в первый файл и</p>
+<pre class="programlisting">
+en_US.UTF-8/XLC_LOCALE     kk_KZ.UTF-8
+en_US.UTF-8/XLC_LOCALE:    kk_KZ.UTF-8
+</pre>
+<p>во второй файл соответственно.</p>
+<p>Первая часть готова.</p>
+</div>
+<div class="sect2" lang="ru">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="xxkb"></a>3.2. xxkb</h3></div></div></div>
+<p>Переходим ко второй части — настройке <span class="application">xxkb</span>. Во-первых удостоверьтесь, что у вас установлен данный пакет. Если в вашей системе его нет:</p>
+<pre class="screen">
+# aptitude install xxkb
+</pre>
+<p>Затем, создаем файл с именем <code class="filename">.xxkbrc</code> в домашней директории следующего содержания:</p>
+<pre class="programlisting">
+XXkb.mainwindow.enable: yes
+XXkb.mainwindow.geometry: 15x15
+XXkb.mainwindow.xpm.1: en15.xpm
+XXkb.mainwindow.xpm.2: kk15.xpm
+XXkb.button.enable: no
+XXkb.mainwindow.in_tray: GNOME
+</pre>
+<p>xxkb использует для своей настройки X resources — способ хранения параметров конфигурации клиентов X-сервера. Разберем первую строчку. Часть до первой точки — так называемый имя класса, у xxkb как видно <code class="literal">XXkb</code>. Вторая часть — имя какого-нибудь элемента приложения, в нашем случае <code class="literal">mainwindow</code> (Справедливости сказать, все немного сложнее. Более подробную информацию на эту тему смотрите документацию по X.org). И наконец третья часть непосредственно есть параметр, т.е. главное окно xxkb будет отображаться на экране монитора. Если вас не устраивает приведенная выше настройка, смотрите документацию по xxkb. В общем у нас получается: две клавиатурные раскладки с иконками в трее размером 15 на 15 пикселов. Кстати, иконка казахской раскладки у меня самодельная, так как с xxkb она не идет. Для первого раза можно использовать другие иконки. Все, сохраняем и выходим из редактора.</p>
+<p>Теперь необходимо как-то запускать xxkb при старте X-сервера. Можно сделать так, поместить следующую строчку в файл <code class="filename">$HOME/.xinitrc</code>:</p>
+<pre class="programlisting">
+xxkb &amp;
+</pre>
+<p>Готово. Попробуйте запустить X-сервер. Если все прошло удачно, вы сможете вводить символы казахского языка в X-терминале, а также других приложениях (OpenOffice.org Writer, Mozilla Firefox и т.д.). Если все-таки ввод не получается, проверьте все-ли настроено также как здесь описано.</p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="console.html">Пред.</a> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right"> <a accesskey="n" href="resources.html">След.</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">2. Консоль </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Начало</a></td>
+<td width="40%" align="right" valign="top"> 4. Ресурсы</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

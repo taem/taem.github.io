@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>PT154 Project | Linukz.org</title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name="keywords" content="Linux, Линукс, FreeBSD, Казахский, Казахский язык, Локаль, Locale, kk_KZ, PT154, RK1048, KZ-1048, Шрифт, Шрифты, Консоль, Console, Клавиатурная раскладка, Клавиатура, Раскладка, Казахская раскладка, Казахская клавиатура, Документация, Debian, Дебиан, Казахский Linux, Казахский Линукс">
+<link rel=stylesheet type="text/css" href="default.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<!--#include virtual="header.html" -->
+
+<h2>PT154 Project</h2>
+
+<STRONG>FreeBSD</STRONG> 
+<P>
+<DL>
+  <DT>Patch <A 
+  href="/download/pt154-patch_20040110.diff">pt154-patch_20040110.diff</A> 
+
+  <DD>(syscons) PT154 charset basic support: kk_KZ.PT154 locale, 
+  KST KazSSR 903-90 keyboard implementation. </DD></DL>
+
+<P></P><STRONG>Linux</STRONG> 
+<P>
+<DL>
+  <DT><A 
+  href="/download/console-kazakh-0.2b.tar.gz">console-kazakh-0.2b.tar.gz</A> 
+
+  <DD>(Linux Console Tools) PT154 and RK1048 (STRK 1048-2002) charsets basic support: fonts and KST KazSSR 903-90 keyboard implementations. 
+  <DT><A href="/download/kk_KZ.tar.gz">kk_KZ.tar.gz</A> 
+  <DD>kk_KZ.PT154 and kk_KZ.RK1048 locales.
+  <DT><A 
+  href="/download/kk_KZ-src.tar.gz">kk_KZ-src.tar.gz</A> 
+  <DD>kk_KZ.PT154 and kk_KZ.RK1048 locale sources.
+  <DT>Linux kernel patch <A 
+  href="/download/linux_fs_nls_pt154.diff">linux_fs_nls_pt154.diff</A> 
+
+  <DD>PT154 NLS for VFAT filesystem.
+  <DT>Linux kernel patch <A 
+  href="/download/linux_fs_nls_rk1048.diff">linux_fs_nls_rk1048.diff</A> 
+
+  <DD>RK1048 NLS for VFAT filesystem. </DD></DL>
+
+<P></P><STRONG>Lynx</STRONG> 
+<P>
+<DL>
+  <DT><A href="/download/pt154_uni.tbl">pt154_uni.tbl</A> 
+  <DD>PT154 charset support. </DD></DL>
+
+<P></P><STRONG>libiconv</STRONG> 
+<P>
+<DL>
+  <DT>Patch <A 
+  href="/download/libiconv-pt154-patch.diff.gz">libiconv-pt154-patch.diff.gz</A> 
+
+  <DD>PT154 charset converter. 
+  <DT>Patch <A 
+  href="/download/libiconv_rk1048_patch.diff">libiconv_rk1048_patch.diff</A> 
+
+  <DD>RK1048 charset converter. </DD></DL>
+
+<small>Last update: 2009-08-23</small>
+
+<!--#include virtual="footer.html" -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>cd-discid | Linukz.org</title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name="keywords" content="cd-discid, CD, CDDB, Linux, Solaris, FreeBSD, NetBSD, OpenBSD, MacOS X, Open Source, Freeware, FOSS, FLOSS">
+<link rel=stylesheet type="text/css" href="default.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<!--#include virtual="header.html" -->
+
+<h2>cd-discid</h2>
+
+<p>cd-discid is an utility to get CDDB discid information from a CD-ROM disc.</p>
+
+<h4>Download</h4>
+
+<p>Latest version - 1.4: <a href="/download/cd-discid-1.4.tar.gz">cd-discid-1.4.tar.gz</a>.
+  <br>Old version available here - 0.9: <a href="http://lly.org/~rcw/cd-discid/">http://lly.org/~rcw/cd-discid/</a>.
+</p>
+
+<h4>Development</h4>
+
+<p>Project page at github: <a href="https://github.com/taem/cd-discid">https://github.com/taem/cd-discid</a>.
+  <br>Clone Git repository: <tt>git clone https://github.com/taem/cd-discid.git</tt>.
+</p>
+
+<h4>Maintainer</h4>
+
+<p>Current maintainer is Timur Birsh. Send your patches to <a href="mailto:taem.NOSPAM@linukz.org">taem.NOSPAM@linukz.org</a> (remove <i>.NOSPAM</i>).</p>
+
+<small>Last update: 2013-05-15</small>
+
+<!--#include virtual="footer.html" -->
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Linukz.org</title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<meta name="keywords" content="Linux, Линукс, FreeBSD, Казахский, Казахский язык, Локаль, Locale, kk_KZ, PT154, RK1048, KZ-1048, Шрифт, Шрифты, Консоль, Console, Клавиатурная раскладка, Клавиатура, Раскладка, Казахская раскладка, Казахская клавиатура, Документация, Debian, Дебиан, Казахский Linux, Казахский Линукс, cd-discid">
+<link rel=stylesheet type="text/css" href="default.css">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<h2>Welcome!</h2>
+
+Below some stuff you can find on this website:
+
+<p>
+  <a href="software.shtml">Software</a> I developed:
+  <ul>
+    <li><a href="murl.shtml">Murl.kz</a>: API implementation for Python and KDE4 plasmoid.
+  </ul>
+  And open source <a href="software.shtml">software</a> I maintain:
+  <ul>
+    <li><a href="cd-discid.shtml">cd-discid</a> is an utility to get CDDB discid information from a CD-ROM disc.
+    <li><a href="sxid.shtml">sXid</a> - suid, sgid file and directory checking.
+  </ul>
+</p>
+
+<p>
+  Some <a href="l10n.shtml">localization</a> stuff.
+</p>
+
+<p>
+  <a href="kazakh.shtml">Documentation</a> I wrote (sorry, in Russion only).
+</p>
+
+<p>
+  And my <a href="links.shtml">links</a> (sorry, in Russion only).
+</p>
+
+<p>
+  Use e-mail <a href="mailto:taem.NOSPAM@linukz.org">taem.NOSPAM@linukz.org</a> (remove <i>.NOSPAM</i>) to contact me.
+  <br>My OpenPGP key ID: E23745B8, fingerprint: 98D4 CD24 7FC5 D5B7 59C2  E1C1 E376 14A6 E237 45B8.
+  <br>You can download my DSA <a href="taem.asc">pubkey</a>.
+</p>
+
+<small>Last update: 2009-09-15</small>
+
+<!--#include virtual="footer.html" -->
+
+</body>
+</html>

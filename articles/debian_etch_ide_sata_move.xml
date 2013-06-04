@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.docbook.org/xml/4.2/docbookx.dtd">
+<article lang="ru" id="Debian-Etch-IDE-SATA-Move">
+  <title>Перенос установленной системы Debian 'etch' с IDE-винта на SATA</title>
+
+  <articleinfo>
+    <author>
+      <firstname>Тимур</firstname>
+      <surname>Бирш</surname>
+      <email>taem@linukz.org</email>
+    </author>
+    <abstract>
+      <para>В этом документы вы найдете пошаговое описание процесса переноса установленной системы Debian 'etch' с IDE-винта на SATA.</para>
+    </abstract>
+  </articleinfo>
+
+  <sect1 id="intro">
+    <title>Введение</title>
+    <para>Дано:
+    <orderedlist>
+      <listitem><para>старый комп (СК): HDD IDE 20Gb;</para></listitem>
+      <listitem><para>новый комп (НК): HDD SATA 200Gb; MB &#8212; Asus P5B (IDE висит на JMicron).</para></listitem>
+    </orderedlist>
+    </para>
+    <para>Задача: перенести Debian GNU/Linux 'etch' с ядром версии 2.6.16 (linux-image-2.6.16-2-686-smp) с СК на НК, т.е. перенести файловые системы с IDE-шного винта на SATA. В результате у нас будет готовая к использованию система с ядром версии 2.6.18.</para>
+    <para>Так как у нас нет возможности загрузиться с IDE-шного винта (поддержка JMicron появилась вроде только с 2.6.18), поэтому будем использовать USB Mobile Rack. К счастью P5B поддерживает загрузку с USB Mass Storage.</para>
+  </sect1>
+
+  <sect1 id="procedure">
+    <title>Процедура переноса</title>
+    <para>Итак, приступим. Грузимся с USB, предварительно "положив" IDE-винт в корзинку и указав в BIOS'е что необходимо сперва проверить загрузочное устройство на USB Mass Storage или нажав F8 при загрузке, кому как удобнее. Если все прошло нормально, на экране монитора должно появиться приглашение GRUB. Быстренько жмем клавишу "c" и проделываем следующую операцию:</para>
+    <screen>
+root (hd0,0)
+kernel /vmlinuz-2.6.16-2-686-smp root=/dev/sdb2 ro
+initrd /initrd.img-2.6.16-2-686-smp
+boot
+</screen>
+<para><emphasis>hd0,0</emphasis> и <emphasis>/dev/sdb2</emphasis> у вас могут отличаться.</para>
+    <para>На экране промелькнут не относящиеся к делу строчки. До того момента пока загрузка не остановится при неудачной попытке смонтировать разделы. И это правильно &#8212; <filename>/etc/fstab</filename> не соответствует новому окружению. Монтируем раздел, где находится файл <filename>fstab</filename>. Используя <command>vi</command> поменяем все строчки где встречается последовательность символов "<emphasis>hda</emphasis>" на "<emphasis>sdb</emphasis>" (опять же <emphasis>hda</emphasis> и <emphasis>sdb</emphasis> у вас могут быть другие). Все, сохраняем, выходим и даем команду <command>reboot</command>. После перезагрузки у нас должна быть вполне работоспособная система. Но нам не это нужно. Хотя как временное решение вполне пригодна.</para>
+    <para>Теперь необходимо на SATA'шном винте создать разделы и инициализировать их. Я использовал как обычно <command>fdisk</command>. Создание разделов отводится на ваше усмотрение, т.к. фломастеры на вкус и цвет сами знаете что. Как и выбор ф/с. Повлиять это на дальнейшие операции по идее не должно.</para>
+    <para>Сразу оговорюсь, каталоги как и разделы приведенные в данном параграфе у вас могут отличаться. В общем-то ничего сложного не должно быть. Главное не торопиться. Создаем каталог для корневого раздела, например <filename>/mnt/target</filename> и монтируем его. Копируем с помощью команды <command>cp -a</command> в только что созданную директорию следующие каталоги: <filename>bin</filename>, <filename>etc</filename>, <filename>initrd</filename>, <filename>lib</filename>, <filename>media</filename>, <filename>opt</filename>, <filename>root</filename>, <filename>sbin</filename>. Создаем остальные недостающие директории: <filename>boot</filename>, <filename>dev</filename>, <filename>home</filename>, <filename>mnt</filename>, <filename>proc</filename>, <filename>srv</filename>, <filename>sys</filename>, <filename>tmp</filename>, <filename>usr</filename>, <filename>var</filename>. Далее копируем (команда <command>cp -a</command>) остальные каталоги, не забыв предварительно смонтировать соответствующие разделы. После этого выполним следующие команды:</para>
+    <screen>
+# cd /mnt/target/dev
+# mknod console c 5 1
+# mknod null c 1 3
+# chmod 600 console
+# chmod 666 null
+</screen>
+    <para>И еще несколько штрихов:</para>
+    <screen>
+# cd /mnt/target
+# ln -s media/cdrom cdrom
+# chmod 2775 home
+# chgrp staff home
+# chmod 1777 tmp
+# chmod 2775 usr/local
+# chgrp staff usr/local
+</screen>
+    <para>Затем правим <filename>fstab</filename>, чтобы не обломаться при загрузке.</para>
+    <para>Теперь надо настроить GRUB. Правим соответствующие файлы <filename>device.map</filename> и <filename>menu.lst</filename> в директории <filename>grub</filename>. В первом файле меняем <emphasis>/dev/hda</emphasis> на <emphasis>/dev/sda</emphasis>. Ну а во втором должно быть все понятно. Затем выполняем команду:</para>
+    <screen>
+# grub-install --root-directory=/mnt/target/boot /dev/sda
+</screen>
+    <para>Опция <literal>--root-directory</literal> говорит GRUB, чтобы он установился в каталоге <filename>/boot</filename>. У меня <filename>/boot</filename> находится не на корневом разделе.</para>
+    <para>Уфф. Все. Волнительный момент. Перезагружаемся. Если система успешно нашла корневой раздел и монтирует остальные &#8212; ликуйте! ;-) Но открывать пиво пока рано. Ставим ядро 2.6.18:</para>
+    <screen>
+$ sudo aptitude install linux-image-2.6.18-4-686
+</screen>
+    <para>Скажем GRUB'у, что у нас новое ядро, поправив соответствующий файл. После перезагрузки система по идее должна увидеть CD-ROM и сетевую карту.</para>
+  </sect1>
+
+  <sect1 id="license">
+    <title>Лицензия</title>
+    <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</ulink>.</para>
+  </sect1>
+
+</article>
