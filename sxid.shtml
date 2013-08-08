@@ -15,24 +15,23 @@
 <h2>sXid</h2>
 
 <p>sXid runs as a cronjob. Basically it tracks any changes in your s[ug]id files and folders. If there are any new ones, ones that aren't set any more, or they have changed bits or other modes, then it reports the changes. You can also run this manually for spot checking.</p>
-<p>It tracks s[ug]id files by md5 checksums. This helps detect if your files have been tampered with, would not show under normal name and permissions checking. Directories are tracked by inodes.</p>
+<p>It tracks s[ug]id files by SHA-256 checksums. This helps detect if your files have been tampered with, would not show under normal name and permissions checking. Directories are tracked by inodes.</p>
 
 <h4>Download</h4>
 
-<p>Latest version - 4.2: <a href="/download/sxid-4.2.tar.gz">sxid-4.2.tar.gz</a>.</p>
+<p>Latest version - 4.20130802: <a href="/download/sxid-4.20130802.tar.gz">sxid-4.20130802.tar.gz</a>.</p>
 
 <h4>Development</h4>
 
-<p>Project page at Gitorious: <a href="http://gitorious.org/cd-discid">http://gitorious.org/sxid</a>.
-  <br>Clone Git repository: <tt>git clone git://gitorious.org/sxid/mainline.git</tt>.
-  <br>Web interface: <a href="http://gitorious.org/sxid/mainline/trees/master">http://gitorious.org/sxid/mainline/trees/master</a>.
+<p>Project page at github: <a href="https://github.com/taem/sxid">https://github.com/taem/sxid</a>.
+  <br>Clone Git repository: <tt>git clone https://github.com/taem/sxid.git</tt>.
 </p>
 
 <h4>Maintainer</h4>
 
 <p>Current maintainer is Timur Birsh. Send your patches to <a href="mailto:taem.NOSPAM@linukz.org">taem.NOSPAM@linukz.org</a> (remove <i>.NOSPAM</i>).</p>
 
-<small>Last update: 2009-09-15</small>
+<small>Last update: 2013-08-08</small>
 
 <!--#include virtual="footer.html" -->
 
